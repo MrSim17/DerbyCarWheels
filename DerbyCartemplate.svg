@@ -1,0 +1,22 @@
+<svg width="8.5in" height="11in" viewBox="0 0 8.5in 11in" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <g id="blocKTemplate">
+            <line x1="0.96875in" y1="0" x2="0.96875in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="5.34375in" y1="0" x2="5.34375in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <!-- <line x1="0" y1="0.625in" x2="7in" y2="0.625in" stroke="#aaaaaa" stroke-dasharray="5 5"/> -->
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="0.9375in" stroke="black" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="5.3125in" stroke="black" fill="white" fill-opacity="0"/>
+            <rect width="7in" height="1.25in" stroke-width="2" stroke="black" fill="white" fill-opacity="0" />
+        </g>
+    </defs>
+    <rect width="8.5in" height="11in" stroke-width="2" stroke="#efefef" fill="white" fill-opacity="0" />
+    <rect width="8in" height="10.5in" stroke-width="2" stroke="#efefef" fill="white" fill-opacity="0" transform="translate(24,24)" stroke-dasharray="5 5" />
+    <g transform="translate(72,50)">
+        <use href="#blocKTemplate"/>
+        <use href="#blocKTemplate" transform="translate(0, 168)"/>
+        <use href="#blocKTemplate" transform="translate(0, 336)"/>
+        <use href="#blocKTemplate" transform="translate(0, 504)"/>
+        <use href="#blocKTemplate" transform="translate(0, 672)"/>
+        <use href="#blocKTemplate" transform="translate(0, 840)"/>
+    </g>
+</svg>
