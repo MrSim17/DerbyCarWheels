@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="8.5in"
+   height="11in"
+   viewBox="0 0 8.5in 11in"
+   version="1.1"
+   id="svg68"
+   sodipodi:docname="DerbyCarTemplate-Profiles.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview70"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="175.36248"
+     inkscape:cy="65.407377"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg68"
+     showguides="true">
+    <sodipodi:guide
+       position="672,446.25511"
+       orientation="-1,0"
+       id="guide292"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+    <sodipodi:guide
+       position="503.83642,936"
+       orientation="0,1"
+       id="guide294"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,134,229)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs48">
+    <g
+       id="blocKTemplate">
+      <!-- Axle Guide Lines -->
+      <line
+         x1="0.96875in"
+         y1="0"
+         x2="0.96875in"
+         y2="1.25in"
+         stroke="#efefef"
+         stroke-dasharray="5 5"
+         stroke-width="0.0625in"
+         id="line37" />
+      <line
+         x1="5.34375in"
+         y1="0"
+         x2="5.34375in"
+         y2="1.25in"
+         stroke="#efefef"
+         stroke-dasharray="5 5"
+         stroke-width="0.0625in"
+         id="line39" />
+      <!-- Side Profile Template -->
+      <rect
+         width=".0625in"
+         height=".0625in"
+         y="1.1875in"
+         x="0.9375in"
+         stroke="black"
+         fill="white"
+         fill-opacity="0"
+         id="rect41" />
+      <rect
+         width=".0625in"
+         height=".0625in"
+         y="1.1875in"
+         x="5.3125in"
+         stroke="black"
+         fill="white"
+         fill-opacity="0"
+         id="rect43" />
+      <rect
+         width="7in"
+         height="1.25in"
+         stroke-width="2"
+         stroke="black"
+         fill="white"
+         fill-opacity="0"
+         id="rect45" />
+    </g>
+  </defs>
+  <rect
+     width="8.5in"
+     height="11in"
+     stroke-width="2"
+     stroke="#efefef"
+     fill="white"
+     fill-opacity="0"
+     id="rect50" />
+  <g
+     transform="translate(72,50)"
+     id="g66">
+    <use
+       href="#blocKTemplate"
+       id="use54" />
+    <use
+       href="#blocKTemplate"
+       transform="translate(0, 168)"
+       id="use56" />
+    <use
+       href="#blocKTemplate"
+       transform="translate(0, 336)"
+       id="use58" />
+    <use
+       href="#blocKTemplate"
+       transform="translate(0, 504)"
+       id="use60" />
+    <use
+       href="#blocKTemplate"
+       transform="translate(0, 672)"
+       id="use62" />
+    <use
+       href="#blocKTemplate"
+       transform="translate(0, 840)"
+       id="use64" />
+  </g>
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-opacity:1"
+     d="M 1.0063062,119.99822 C 150.10076,41.852163 280.19475,25.705937 280.19475,25.705937 c 0,0 128.52969,53.46836 244.72054,32.90361 C 641.10614,38.044787 671.95327,0.01606588 671.95327,0.01606588"
+     id="path3307"
+     sodipodi:nodetypes="ccsc" />
+</svg>

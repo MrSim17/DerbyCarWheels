@@ -1,6 +1,23 @@
 <svg width="8.5in" height="11in" viewBox="0 0 8.5in 11in" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <g id="blocKTemplate">
+        <!-- Profiles -->
+        <path
+            id="profile-raceCar1"
+            style="stroke:#000000;stroke-opacity:1;fill:none;"
+            d="M 1.0063062,119.99822 C 150.10076,41.852163 280.19475,25.705937 280.19475,25.705937 c 0,0 128.52969,53.46836 244.72054,32.90361 C 641.10614,38.044787 671.95327,0.01606588 671.95327,0.01606588"
+            />
+        <line id="profile-wedge" x1="0" y1="1in" x2="7in" y2="0" stroke="black"/>
+        <line id="profile-wedge-reverse" x1="0" y1="0" x2="7in" y2="1in" stroke="black"/>
+
+        <g id="blocktemplate">
+            <pattern id="grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect width="22" height="22" stroke="#d6d6d6" fill="white" fill-opacity="0" stroke-width="1" />
+            </pattern>
+
+            <rect width="7in" height="1.25in" stroke-width="2" stroke="black" style="fill:url(#grid);" />
+        </g>
+
+        <g id="blocktemplate-frontright">
             <!-- Axle Guide Lines -->
             <line x1="0.96875in" y1="0" x2="0.96875in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
             <line x1="5.34375in" y1="0" x2="5.34375in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
@@ -8,17 +25,66 @@
             <!-- Side Profile Template -->
             <rect width=".0625in" height=".0625in" y="1.1875in" x="0.9375in" stroke="black" fill="white" fill-opacity="0"/>
             <rect width=".0625in" height=".0625in" y="1.1875in" x="5.3125in" stroke="black" fill="white" fill-opacity="0"/>
-            <rect width="7in" height="1.25in" stroke-width="2" stroke="black" fill="white" fill-opacity="0" />
+            
+            <use href="#blocktemplate"/>
+        </g>
+
+        <g id="blocktemplate-frontright-wheels">
+            <use href="#blocktemplate-frontright"/>
+
+            <!-- Wheels -->
+            <circle cx="0.96875in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="0.96875in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+
+            <circle cx="5.34375in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="5.34375in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+        </g>
+
+        <g id="blocktemplate-frontleft">
+            <!-- Axle Guide Lines -->
+            <line x1="1.625in" y1="0" x2="1.625in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="6.03125in" y1="0" x2="6.03125in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+
+            <!-- Side Profile Template -->
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="1.59375in" stroke="black" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="6in" stroke="black" fill="white" fill-opacity="0"/>
+
+            <use href="#blocktemplate"/>
+        </g>
+
+        <g id="blocktemplate-frontleft-wheels">
+            <use href="#blocktemplate-frontleft"/>
+
+            <!-- Wheels -->
+            <circle cx="1.625in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="1.625in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+
+            <circle cx="6.03125in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="6.03125in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
         </g>
     </defs>
     <rect width="8.5in" height="11in" stroke-width="2" stroke="#efefef" fill="white" fill-opacity="0" />
     <rect width="8in" height="10.5in" stroke-width="2" stroke="#efefef" fill="white" fill-opacity="0" transform="translate(24,24)" stroke-dasharray="5 5" />
     <g transform="translate(72,50)">
-        <use href="#blocKTemplate"/>
-        <use href="#blocKTemplate" transform="translate(0, 168)"/>
-        <use href="#blocKTemplate" transform="translate(0, 336)"/>
-        <use href="#blocKTemplate" transform="translate(0, 504)"/>
-        <use href="#blocKTemplate" transform="translate(0, 672)"/>
-        <use href="#blocKTemplate" transform="translate(0, 840)"/>
+        <use href="#blocktemplate-frontleft-wheels"/>
+
+        <g transform="translate(0, 192)">
+            <use href="#blocktemplate-frontright-wheels"/>
+            <use href="#profile-wedge-reverse"/>
+        </g>
+
+        <g transform="translate(0, 384)">
+            <use href="#blocktemplate-frontleft-wheels"/>
+            <use href="#profile-wedge"/>
+        </g>
+
+        <g transform="translate(0, 576)">
+            <use href="#blocktemplate-frontright-wheels"/>
+        </g>
+
+        <g transform="translate(0, 768)">
+            <use href="#blocktemplate-frontleft-wheels"/>
+            <use href="#profile-raceCar1"/>
+        </g>
     </g>
 </svg>
