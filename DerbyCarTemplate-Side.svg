@@ -23,8 +23,8 @@
             <line x1="5.34375in" y1="0" x2="5.34375in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
 
             <!-- Side Profile Template -->
-            <rect width=".0625in" height=".0625in" y="1.1875in" x="0.9375in" stroke="black" fill="white" fill-opacity="0"/>
-            <rect width=".0625in" height=".0625in" y="1.1875in" x="5.3125in" stroke="black" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="0.5625in" stroke="black" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="6in" stroke="black" fill="white" fill-opacity="0"/>
             
             <use href="#blocktemplate"/>
         </g>

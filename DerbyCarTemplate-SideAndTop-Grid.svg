@@ -5,17 +5,21 @@
         </pattern>
         <g id="blocKTemplate">
             <!-- Axle Guide Lines -->
-            <line x1="0.96875in" y1="0" x2="0.96875in" y2="3in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
-            <line x1="5.34375in" y1="0" x2="5.34375in" y2="3in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="1.625in" y1="0" x2="1.625in" y2="3in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="6in" y1="0" x2="6in" y2="3in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
 
             <!-- Side Profile Template -->
-            <rect width=".0625in" height=".0625in" y="1.1875in" x="0.9375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
-            <rect width=".0625in" height=".0625in" y="1.1875in" x="5.3125in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <!-- Wheel Grooves -->
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="1.59375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="5.96875in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <!-- Main Block -->
             <rect width="7in" height="1.25in" stroke-width="2" stroke="black" style="fill:url(#grid);" />
 
             <!-- Top/Bottom Profile Template -->
-            <rect width=".0625in" height="1.75in" y="1.25in" x="0.9375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
-            <rect width=".0625in" height="1.75in" y="1.25in" x="5.3125in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <!-- Wheel Grooves -->
+            <rect width=".0625in" height="1.75in" y="1.25in" x="1.59375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height="1.75in" y="1.25in" x="5.96875in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <!-- Main Block -->
             <line x1="0" y1="2.125in" x2="7in" y2="2.125in" stroke="#a5a5a5" stroke-dasharray="5 5" stroke-width="1"/>
             <rect width="7in" height="1.75in" stroke-width="2" stroke="black" transform="translate(0,120)" />
         </g>
