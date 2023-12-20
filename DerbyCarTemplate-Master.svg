@@ -1,0 +1,201 @@
+<svg width="20in" height="40in" viewBox="0 0 8.5in 11in" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="grid" x="0" y="0" width="21" height="21" patternUnits="userSpaceOnUse">
+            <rect width="22" height="22" stroke="#d6d6d6" fill="white" fill-opacity="0" stroke-width="1" />
+        </pattern>
+
+        <!-- ====================================== -->
+        <!--   Front Left Copies Of All Templates   -->
+        <!-- ====================================== -->
+        <g id="block-fl-top">
+            <!-- Axle Guide Lines -->
+            <line x1="1.625in" y1="0" x2="1.625in" y2="1.75in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="6in" y1="0" x2="6in" y2="1.75in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+
+            <!-- Top/Bottom Profile Template -->
+            <!-- Wheel Grooves -->
+            <!-- Wheel Grooves -->
+            
+            <!-- Calculation: 1/16 = 0.0625in -->
+            <!-- Calculation: 1/32 = 0.03125in -->
+            <!-- Calculation: 5/8 = 0.625in -->
+
+            <!-- Lines should be centered at 1 5/8 in and 6in-->
+            <!-- calculation: 6in - 1/32 (half line width) = 5.96875 -->
+            <!-- calculation: 1.625in - 1/32 (half line width) = 5.96875 -->
+            <rect width=".0625in" height="1.75in" y="0in" x="1.59375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height="1.75in" y="0in" x="5.96875in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            
+            <!-- Main Block -->
+            <line x1="0" y1="0.875in" x2="7in" y2="0.875in" stroke="#a5a5a5" stroke-dasharray="5 5" stroke-width="1"/>
+            <rect width="7in" height="1.75in" stroke-width="2" stroke="black" />
+        </g>
+
+        <g id="block-fl-side">
+            <!-- Axle Guide Lines -->
+            <line x1="1.625in" y1="0" x2="1.625in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+            <line x1="6in" y1="0" x2="6in" y2="1.25in" stroke="#efefef" stroke-dasharray="5 5" stroke-width="0.0625in"/>
+
+            <!-- Side Profile Template -->
+            <!-- Wheel Grooves -->
+            
+            <!-- Calculation: 1/16 = 0.0625in -->
+            <!-- Calculation: 1/32 = 0.03125in -->
+            <!-- Calculation: 5/8 = 0.625in -->
+
+            <!-- Lines should be centered at 1 5/8 in and 6in-->
+            <!-- calculation: 6in - 1/32 (half line width) = 5.96875 -->
+            <!-- calculation: 1.625in - 1/32 (half line width) = 5.96875 -->
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="1.59375in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            <rect width=".0625in" height=".0625in" y="1.1875in" x="5.96875in" stroke="#8a8a8a" fill="white" fill-opacity="0"/>
+            
+            <!-- Main Block -->
+            <rect width="7in" height="1.25in" stroke-width="2" stroke="black" fill="" />
+        </g>
+
+        <g id="block-fl-side-wheels">
+            <!-- Wheels -->
+            <!-- Calculation: 1 5/8 = 1.625in -->
+            <circle cx="1.625in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="1.625in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+
+            <circle cx="6in" cy="1.25in" r="0.595in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+            <circle cx="6in" cy="1.25in" r="0.35in" fill="none" stroke="#d6d6d6" stroke-dasharray="5 5" />
+
+            <use href="#block-fl-side"/>
+        </g>
+
+        <g id="block-fl-top-side-wheels">
+            <use href="#block-fl-side-wheels"/>
+            <use href="#block-fl-top" transform="translate(0,120)"/>
+        </g>
+
+        <g id="block-fl-side-wheels-white">
+            <use href="#block-fl-side-wheels" style="fill:#FFFFFF;fill-opacity:0;"/>
+        </g>
+
+        <g id="block-fl-side-wheels-grid">
+            <use href="#block-fl-side-wheels" style="fill:url(#grid);"/>
+        </g>
+
+        <g id="block-fl-top-side">
+            <use href="#block-fl-side"/>
+            <use href="#block-fl-top" transform="translate(0,120)"/>
+        </g>
+
+        <g id="block-fl-top-side-white">
+            <use href="#block-fl-top-side" style="fill:#FFFFFF;fill-opacity:0;"/>
+        </g>
+
+        <g id="block-fl-top-side-grid">
+            <use href="#block-fl-top-side" style="fill:url(#grid);"/>
+        </g>
+
+        <g id="block-fl-top-side-wheels">
+            <use href="#block-fl-side-wheels"/>
+            <use href="#block-fl-top" transform="translate(0,120)"/>
+        </g>
+
+        <g id="block-fl-top-side-wheels-white">
+            <use href="#block-fl-top-side-wheels" style="fill:#FFFFFF;fill-opacity:0;"/>
+        </g>
+
+        <g id="block-fl-top-side-wheels-grid">
+            <use href="#block-fl-top-side-wheels" style="fill:url(#grid);"/>
+        </g>
+
+
+        <!-- ======================================= -->
+        <!--   Front Right Copies Of All Templates   -->
+        <!-- ======================================= -->
+
+        <g id="block-fr-top">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-side">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-side" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-side-wheels">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-side-wheels" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-wheels">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-wheels" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-side-wheels-white">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-side-wheels-white" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-side-wheels-grid">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-side-wheels-grid" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-white">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-white" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-grid">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-grid" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-wheels">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-wheels" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-wheels-white">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-wheels-white" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+
+        <g id="block-fr-top-side-wheels-grid">
+            <!-- Calculation: Length of the car in pixels ( 7in * 96px = 672 ) -->
+            <use href="#block-fl-top-side-wheels-grid" transform="scale(-1,1) translate(-672,0)"/>
+        </g>
+    </defs>
+
+    <g transform="translate(72,50)">
+        <use href="#block-fl-side"/>
+        <use href="#block-fl-top" transform="translate(0,140)"/>
+        <use href="#block-fl-top-side" transform="translate(0,320)"/>
+        <use href="#block-fl-top-side-grid" transform="translate(0,640)"/>
+        <use href="#block-fl-top-side-white" transform="translate(0,960)"/>
+
+        <use href="#block-fl-top-side-wheels-grid" transform="translate(0,1280)"/>
+        <use href="#block-fl-top-side-wheels-white" transform="translate(0,1600)"/>
+
+        <use href="#block-fl-side-wheels" transform="translate(0,1920)"/>
+        <use href="#block-fl-side-wheels-white" transform="translate(0,2120)"/>
+        <use href="#block-fl-side-wheels-grid" transform="translate(0,2320)"/>
+    </g>
+    <g transform="translate(800,50)">
+        <use href="#block-fr-side"/>
+        <use href="#block-fr-top" transform="translate(0,140)"/>
+        <use href="#block-fr-top-side" transform="translate(0,320)"/>
+        <use href="#block-fr-top-side-grid" transform="translate(0,640)"/>
+        <use href="#block-fr-top-side-white" transform="translate(0,960)"/>
+
+        <use href="#block-fr-top-side-wheels-grid" transform="translate(0,1280)"/>
+        <use href="#block-fr-top-side-wheels-white" transform="translate(0,1600)"/>
+
+        <use href="#block-fr-side-wheels" transform="translate(0,1920)"/>
+        <use href="#block-fr-side-wheels-white" transform="translate(0,2120)"/>
+        <use href="#block-fr-side-wheels-grid" transform="translate(0,2320)"/>
+    </g>
+</svg>
